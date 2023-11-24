@@ -26,8 +26,11 @@ public class ItemFormDTO {
 
     @NotBlank(message = "재고는 필수입력입니다.")
     private Integer stockNumber;
+
     private ItemSellStatus itemSellStatus;
+
     private List<ItemImgDTO> itemImgDTOList = new ArrayList<>();
+
     private List<Long> itemImgIds = new ArrayList<>();
 
     private static ModelMapper modelMapper = new ModelMapper();
